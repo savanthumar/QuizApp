@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* ====== Global Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100%;
+}
+
+/* ====== Card Container ====== */
+.card {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ====== Header ====== */
+.header {
+    background: #2575fc;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    color: white;
+    font-weight: 600;
+}
+
+/* ====== Inner Layout ====== */
+.inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ====== Right Panel ====== */
+.right {
+    background: #2575fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.right p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ====== Auth Card ====== */
+.auth-card h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.form-field {
+    margin-bottom: 15px;
+}
+.form-field input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.form-field input:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37,117,252,0.5);
+}
+
+/* ====== Button ====== */
+.btn-primary {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+.btn-primary:hover {
+    background: #1a5fd3;
+}
+
+/* ====== Small Link ====== */
+.small-link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.small-link a {
+    color: #2575fc;
+    text-decoration: none;
+}
+.small-link a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    .inner {
+        flex-direction: column;
+    }
+    .right {
+        text-align: center;
+    }
+}

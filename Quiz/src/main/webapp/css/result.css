@@ -1,0 +1,120 @@
+
+@charset "UTF-8";
+
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Card */
+.card {
+  background: white;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Inner Layout */
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Left Side */
+.left {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.result-box {
+  margin-top: 30px;
+}
+
+.score {
+  font-size: 50px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.percentage {
+  font-size: 20px;
+  margin: 10px 0 25px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #4CAF50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #45a049;
+}
+
+.btn-secondary {
+  background: #f44336;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #e53935;
+}
+
+/* Right Side */
+.right {
+  flex: 1;
+  background: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.right h3 {
+  margin-top: 0;
+}
+
+.right p {
+  color: #ddd;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+  }
+  .right {
+    text-align: center;
+  }
+}
